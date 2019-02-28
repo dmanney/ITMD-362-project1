@@ -29,9 +29,23 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* ========== Base Styles ========== */
 /* Base Styles (element selectors; color, typography, and that's it)*/
 html {
-  font-size: 1.125em;/*18 is a sexy number for small phones with paragraph*/
-  line-height: 1.2em;/*18*1.2=21.6...relative to em is 1.2*/
-  padding: 1.2em;
+  background-attachment: fixed;
+  /*background-color: #f7ece3;*/
+  /*background-image: url("assets/images/ret2.png");*/
+  background-blend-mode: normal;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  font-family: Adallyn, "TImes New Roman", serif;
+  font-size: 1.125em; /* 18px / 16px = 1.125em */
+  line-height: 1.222em; /* 22px / 18px = 1.222... */
+}
+
+main {
+  /* background-color: black; */
+  margin: auto;
+  padding-top: 4.8888em;
+  width: 70vw;
 }
 
 h1 {
@@ -43,43 +57,76 @@ h1 {
 /* ========== Layout ========== */
 /* Layout (id selectors; width/height, position, flexbox, grid)*/
 
-form {
-  display: flex;
-  flex-direction: column;
-}
-
-/* ========== Module ========== */
-/* Module/Modular Section (class or descedent selectors; repeating specific styles) */
-
-/* ========== State ========== */
-/* State (repeat the structure above; media queries, JavaScript-dependent styles) */
-
-/*Baseline css*/
-/**
-* A quick baseline grid overlay using css+svg.
-* Inspired by [Basehold.it](https://basehold.it/).
-* @author leshido
-*/
-
-body.g {
-  position: relative;
-}
-
-body.g::after {
-  /* Change the `height` parameter here to match your base line-height. */
-  background: url('data:image/svg+xml;utf8,<svg height="22" width="1" xmlns="http://www.w3.org/2000/svg"><rect width="1" height="0.5" style="fill:rgba(255, 0, 0, 0.3)" /></svg>') repeat top left;
-
-  content: "";
+#form {
+  /*background-color: ;*/
   display: block;
-  pointer-events: none;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 9999;
-  position: absolute;
+  padding: 3vh 3vw 3vh 3vw;
 }
 
-body.g:active::after {
-  display: none;
+/* Form */
+form {
+  padding-top: 1.2222em;
+}
+
+@font-face {
+    font-family: 'Pacifico' format('truetype');
+    src: url('assets/fonts/Pacifico.ttf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+input,
+label {
+  display: block;
+  box-sizing: border-box;
+}
+
+input {
+  padding: 1.2222222222em; /* 22 / 18 = 1.2222222222 */
+  margin: 0.66666em 0 0.66666em 0;
+  font-size: inherit;
+  font-family: Pacifico, "Times New Roman", serif;
+  line-height: inherit;
+  border: 0;
+  outline: 0;
+  width: 100%;
+}
+
+input[type="email"] {
+  background-color: #ffb237;
+}
+
+input[type="email"]:focus {
+  background-color: #ffffff;
+}
+
+input[type="submit"] {
+  background-color: #02e3fd;
+  border-radius: 30px;
+}
+
+input[type="submit"]:disabled {
+  background-color: #a3a3a3;
+}
+
+h1 {
+  /* background-color: ; */
+  /*color: #ba0574;*/
+  font-family: Pacifico, 'Times New Roman', serif;
+  font-size: 4em; /* 72px / 18px  = 2.25 */
+  line-height: 1.5277777em; /* 110px / 72px */
+  padding-bottom: 0.25em; /* add one line-heading below */
+}
+
+@media (min-width: 500px) {
+  main {
+    width: 60vw;
+  }
+}
+
+@media (min-width: 800px) {
+  main {
+    width: 50vw;
+  }
 }
