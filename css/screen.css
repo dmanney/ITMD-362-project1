@@ -30,12 +30,11 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* Base Styles (element selectors; color, typography, and that's it)*/
 html {
   background-attachment: fixed;
-  /*background-color: #f7ece3;*/
-  /*background-image: url("assets/images/ret2.png");*/
+  background-color: #000000;
+  background-image: url("assets/pictures/bit1.png");
   background-blend-mode: normal;
   background-size: cover;
   background-position: top;
-  background-repeat: no-repeat;
   font-family: Pacifico, "Times New Roman", serif;
   font-size: 1.125em; /* 18px / 16px = 1.125em */
   line-height: 1.222em; /* 22px / 18px = 1.222... */
