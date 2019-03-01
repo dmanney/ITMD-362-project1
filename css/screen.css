@@ -36,7 +36,7 @@ html {
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
-  font-family: Adallyn, "TImes New Roman", serif;
+  font-family: Pacifico, "Times New Roman", serif;
   font-size: 1.125em; /* 18px / 16px = 1.125em */
   line-height: 1.222em; /* 22px / 18px = 1.222... */
 }
@@ -58,9 +58,9 @@ h1 {
 /* Layout (id selectors; width/height, position, flexbox, grid)*/
 
 #form {
-  /*background-color: ;*/
+  background-color: #63077c;
   display: block;
-  padding: 3vh 3vw 3vh 3vw;
+  padding: 5vh 5vw 5vh 5vw;
 }
 
 /* Form */
@@ -94,7 +94,7 @@ input {
 }
 
 input[type="email"] {
-  background-color: #ffb237;
+  background-color: #2e073f;
 }
 
 input[type="email"]:focus {
@@ -102,7 +102,7 @@ input[type="email"]:focus {
 }
 
 input[type="submit"] {
-  background-color: #02e3fd;
+  background-color: #3a00af;
   border-radius: 30px;
 }
 
@@ -111,8 +111,7 @@ input[type="submit"]:disabled {
 }
 
 h1 {
-  /* background-color: ; */
-  /*color: #ba0574;*/
+  color: #efedee;
   font-family: Pacifico, 'Times New Roman', serif;
   font-size: 4em; /* 72px / 18px  = 2.25 */
   line-height: 1.5277777em; /* 110px / 72px */
